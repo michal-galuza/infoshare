@@ -1,4 +1,9 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "backend": "apps/backend",
+    "frontend": "apps/frontend",
+    "shared-api-inteface": "libs/shared/api-inteface",
+    "shared-backend-common-domain": "libs/shared/backend/common/domain"
+  }
 }

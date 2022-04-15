@@ -1,0 +1,14 @@
+{
+  "root": "libs/shared/backend/common/domain",
+  "sourceRoot": "libs/shared/backend/common/domain/src",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/backend/common/domain/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

@@ -2,8 +2,10 @@
   "version": 2,
   "projects": {
     "backend": "apps/backend",
+    "backend-product": "libs/backend/product",
     "frontend": "apps/frontend",
-    "shared-api-inteface": "libs/shared/api-inteface",
-    "shared-backend-common-domain": "libs/shared/backend/common/domain"
+    "frontend-list-form": "libs/frontend/list-form",
+    "frontend-product-list": "libs/frontend/product-list",
+    "shared-api-inteface": "libs/shared/api-inteface"
   }
 }

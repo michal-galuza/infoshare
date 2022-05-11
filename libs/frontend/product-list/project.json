@@ -1,0 +1,23 @@
+{
+  "root": "libs/frontend/product-list",
+  "sourceRoot": "libs/frontend/product-list/src",
+  "projectType": "library",
+  "tags": ["next"],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/frontend/product-list/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/frontend/product-list"],
+      "options": {
+        "jestConfig": "libs/frontend/product-list/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "root": "libs/frontend/list-form",
+  "sourceRoot": "libs/frontend/list-form/src",
+  "projectType": "library",
+  "tags": ["next"],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/frontend/list-form/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/frontend/list-form"],
+      "options": {
+        "jestConfig": "libs/frontend/list-form/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

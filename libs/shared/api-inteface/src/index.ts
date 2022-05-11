@@ -1,3 +1,9 @@
-export { IGetInitialDataRes } from './lib/get-initial-data.interface';
-export { IProduct } from './lib/interfaces/product.interface';
-export { IEditProductReq } from './lib/edit-product.interface';
+export {
+  IHttpSendList,
+  IHttpSendList_Product,
+} from './lib/http/product/send-list-product.http-interface';
+export {
+  IHttpGetProductLists,
+  IHttpGetProductLists_Product,
+  IHttpGetProductLists_ProductList,
+} from './lib/http/product/get-product-lists.http-interface';

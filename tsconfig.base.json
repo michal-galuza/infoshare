@@ -15,11 +15,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "composite": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "types": ["node", "jest", "@testing-library/jest-dom"],
     "paths": {
-      "@app/shared/api-interface": ["libs/shared/api-inteface/src/index.ts"],
-      "@app/shared/backend/common/domain": [
-        "libs/shared/backend/common/domain/src/index.ts"
-      ]
+      "@app/backend/product": ["libs/backend/product/src/index.ts"],
+      "@app/backend/product-list": ["libs/frontend/product-list/src/index.ts"],
+      "@app/frontend/list-form": ["libs/frontend/list-form/src/index.ts"],
+      "@app/shared/api-interface": ["libs/shared/api-inteface/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
